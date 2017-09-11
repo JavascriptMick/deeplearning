@@ -408,6 +408,6 @@ def test_decoding_layer_infer(decoding_layer_infer):
                 'Found wrong type: {}'.format(type(infer_logits_output))
 
             assert infer_logits_output.sample_id.get_shape().as_list() == [batch_size, None], \
-                 'Wrong shape returned.  Found {}'.format(infer_logits_output.sample_id.get_shape())
+                 'Wrong shape returned.  Found {}.'.format(infer_logits_output.sample_id.get_shape())
 
     _print_success_message()
